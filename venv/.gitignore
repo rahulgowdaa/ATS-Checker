@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+
+# Flask session files
+flask_session_files/
+
+# Config and sensitive keys
+config.py
+key2.json
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore anything in the static folder that is dynamically generated (optional)
+static/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment activation scripts (optional)
+bin/

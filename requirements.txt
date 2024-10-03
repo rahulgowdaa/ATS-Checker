@@ -1,0 +1,9 @@
+Flask
+flask-session
+spacy
+PyMuPDF
+python-docx
+google-generativeai
+textstat
+language_tool_python
+markupsafe
