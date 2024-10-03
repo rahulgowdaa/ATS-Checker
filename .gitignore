@@ -24,9 +24,6 @@ key2.json
 .DS_Store
 Thumbs.db
 
-# Ignore anything in the static folder that is dynamically generated (optional)
-static/
-
 # Ignore compiled Python files
 *.pyc
 
