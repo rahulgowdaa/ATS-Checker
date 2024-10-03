@@ -1,0 +1,234 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    color: #343a40; /* Dark grey text */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40; /* Dark grey */
+}
+
+/* Container styling */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #005b96; /* Darker blue */
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    justify-content: center; /* Center the nav items */
+    width: 100%; /* Ensure it fills the width for centering */
+}
+
+.navbar-nav .nav-link {
+    color: black !important; /* White text for links */
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #17a2b8 !important; /* Bright cyan for active link */
+    color: white !important;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Form styling */
+label {
+    font-weight: bold;
+    color: #005b96; /* Same as navbar color */
+    margin-bottom: 5px;
+}
+
+/* Custom file input styling */
+input[type="file"] {
+    display: block;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    background-color: #e9f2fb; /* Light blue background */
+    color: #343a40; /* Dark grey text */
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #d3e8f6; /* Slightly darker on hover */
+}
+
+/* Textarea styling */
+textarea {
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+textarea:focus {
+    background-color: #e9f2fb; /* Focus color same as file input */
+    outline: none;
+}
+
+/* Buttons */
+button[type="submit"],
+.btn-danger {
+    width: 120px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #005b96; /* Darker blue */
+    border: none;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #004080; /* Slightly darker on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Results section */
+#results {
+    display: none; /* Hide by default */
+    margin-top: 30px;
+}
+
+#results h4 {
+    font-size: 1.5rem;
+    color: #17a2b8; /* Bright cyan for the results heading */
+    margin-bottom: 15px;
+}
+
+.result-card {
+    background-color: #ffffff; /* White background for result cards */
+    border: 1px solid #ced4da; /* Subtle border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+.result-card h5 {
+    color: #005b96; /* Darker blue for section headings */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef; /* Light grey borders for list items */
+}
+
+.result-card ul li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+
+/* Icons styling */
+.icon {
+    font-size: 1.2rem;
+    color: #28a745; /* Green for checkmarks */
+    margin-right: 10px;
+}
+
+.text-danger {
+    color: #dc3545 !important; /* Red color for missing or critical items */
+}
+
+.text-success {
+    color: #28a745 !important; /* Green color for positive feedback */
+}
+
+/* Progress bar styling */
+.progress {
+    height: 30px;
+    border-radius: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #28a745 !important; /* Green progress bar */
+}
+
+/* Improvement suggestions list styling */
+#improvementSuggestions ul {
+    padding-left: 20px;
+    color: #005b96; /* Dark blue for the improvement suggestions */
+}
+
+#improvementSuggestions ul li {
+    margin-bottom: 10px;
+}
+
+/* Adding visual effects */
+#results .card-icon {
+    font-size: 1.5rem;
+    color: #005b96;
+    margin-right: 8px;
+}
+
+#matchPercentage .card-icon {
+    color: #17a2b8;
+}
+
+/* Make the application responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #results h4 {
+        font-size: 1.2rem;
+    }
+}
